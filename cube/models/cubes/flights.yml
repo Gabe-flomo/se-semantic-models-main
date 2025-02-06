@@ -1,0 +1,146 @@
+cubes:
+  - name: flights
+    sql_table: hex_app_data.semantic_model_data.flights
+    data_source: default
+
+    joins:
+      - name: carriers
+        relationship: many_to_one
+        sql: "{CUBE.carrier} = {carriers.code}"
+      - name: aircraft
+        relationship: many_to_one
+        sql: "{CUBE.tail_num} = {aircraft.tail_num}"
+
+    dimensions:
+      - name: id2
+        sql: id2
+        type: number
+        primary_key: true
+        
+      - name: origin
+        sql: origin
+        type: string
+
+      - name: destination
+        sql: destination
+        type: string
+
+      - name: flight_num
+        sql: flight_num
+        type: string
+
+      - name: tail_num
+        sql: tail_num
+        type: string
+
+      - name: cancelled
+        sql: cancelled
+        type: string
+
+      - name: diverted
+        sql: diverted
+        type: string
+
+      - name: carrier
+        sql: carrier
+        type: string
+
+      - name: dep_time
+        sql: dep_time
+        type: time
+
+      - name: arr_time
+        sql: arr_time
+        type: time
+
+      - name: distance
+        sql: distance
+        type: number
+
+      - name: air_time
+        sql: air_time
+        type: number
+
+      - name: dep_delay
+        sql: dep_delay
+        type: number
+
+      - name: arr_delay
+        sql: arr_delay
+        type: number
+
+      - name: taxi_out
+        sql: taxi_out
+        type: number
+
+      - name: taxi_in
+        sql: taxi_in
+        type: number
+
+      - name: cancelled_code
+        sql: cancelled_code
+        type: string
+
+      - name: diverted_code
+        sql: diverted_code
+        type: string
+
+      - name: carrier_delay
+        sql: carrier_delay
+        type: number
+
+      - name: weather_delay
+        sql: weather_delay
+        type: number
+
+      - name: nas_delay
+        sql: nas_delay
+        type: number
+
+      - name: security_delay
+        sql: security_delay
+        type: number
+
+      - name: late_aircraft_delay
+        sql: late_aircraft_delay
+        type: number
+
+    measures:
+      - name: flight_count
+        type: count
+
+      - name: total_distance
+        type: sum
+        sql: distance
+
+      - name: avg_distance
+        type: avg
+        sql: distance
+
+      - name: total_air_time
+        type: sum
+        sql: air_time
+
+      - name: avg_air_time
+        type: avg
+        sql: air_time
+
+      - name: total_dep_delay
+        type: sum
+        sql: dep_delay
+
+      - name: avg_dep_delay
+        type: avg
+        sql: dep_delay
+
+      - name: total_arr_delay
+        type: sum
+        sql: arr_delay
+
+      - name: avg_arr_delay
+        type: avg
+        sql: arr_delay
+
+    pre_aggregations:
+      # Pre-aggregation definitions go here.
+      # Learn more in the documentation: https://cube.dev/docs/caching/pre-aggregations/getting-started

@@ -1,0 +1,33 @@
+cubes:
+  - name: Products
+    sql: >
+      SELECT
+        ii.product_id,
+        ii.product_name,
+        ii.product_category,
+        ii.product_brand,
+        ii.product_retail_price,
+        ii.product_department,
+        ii.cost
+      FROM demo_data.ecommerce.inventory_items ii
+    dimensions:
+      - name: product_id
+        sql: product_id
+        type: string
+        primaryKey: true
+      - name: product_name
+        sql: product_name
+        type: string
+      - name: product_category
+        sql: product_category
+        type: string
+      - name: product_brand
+        sql: product_brand
+        type: string
+      - name: product_department
+        sql: product_department
+        type: string
+    measures:
+      - name: average_cost
+        sql: AVG(cost)
+        type: number

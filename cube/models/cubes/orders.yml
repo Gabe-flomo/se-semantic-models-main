@@ -1,0 +1,36 @@
+cubes:
+  - name: orders
+    sql_table: demo_data.ecommerce.orders
+    data_source: default
+
+    joins: 
+      - name: order_items
+        relationship: many_to_one
+        sql: "{CUBE.order_id} = {order_items.order_id}"
+
+      - name: users
+        relationship: many_to_one
+        sql: "{CUBE.user_id} = {users.user_id}"
+
+    dimensions:
+      - name: order_id
+        sql: order_id
+        type: number
+        primaryKey: true
+
+      - name: created_at
+        sql: created_at
+        type: time
+
+      - name: order_year
+        sql: "extract(year from {created_at})"
+        type: number
+
+      - name: user_id
+        sql: user_id
+        type: number
+
+    measures:
+      - name: num_of_item
+        sql: num_of_item
+        type: sum

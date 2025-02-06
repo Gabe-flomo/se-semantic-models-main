@@ -1,0 +1,131 @@
+cubes:
+  - name: aircraft
+    sql_table: hex_app_data.semantic_model_data.aircraft
+    data_source: default
+
+    joins: 
+      - name: aircraft_models
+        relationship: many_to_one
+        sql: "{CUBE.aircraft_model_code} = {aircraft_models.aircraft_model_code}"
+
+    dimensions:
+      - name: id
+        sql: id
+        type: number
+        primary_key: true
+
+      - name: tail_num
+        sql: tail_num
+        type: string
+
+      - name: aircraft_serial
+        sql: aircraft_serial
+        type: string
+
+      - name: aircraft_model_code
+        sql: aircraft_model_code
+        type: string
+
+      - name: aircraft_engine_code
+        sql: aircraft_engine_code
+        type: string
+
+      - name: name
+        sql: name
+        type: string
+
+      - name: address1
+        sql: address1
+        type: string
+
+      - name: address2
+        sql: address2
+        type: string
+
+      - name: city
+        sql: city
+        type: string
+
+      - name: state
+        sql: state
+        type: string
+
+      - name: zip
+        sql: zip
+        type: string
+
+      - name: region
+        sql: region
+        type: string
+
+      - name: county
+        sql: county
+        type: string
+
+      - name: country
+        sql: country
+        type: string
+
+      - name: certification
+        sql: certification
+        type: string
+
+      - name: status_code
+        sql: status_code
+        type: string
+
+      - name: mode_s_code
+        sql: mode_s_code
+        type: string
+
+      - name: fract_owner
+        sql: fract_owner
+        type: string
+
+      - name: last_action_date
+        sql: last_action_date
+        type: time
+
+      - name: cert_issue_date
+        sql: cert_issue_date
+        type: time
+
+      - name: air_worth_date
+        sql: air_worth_date
+        type: time
+
+      - name: manufacturer
+        sql: manufacturer
+        type: string
+
+      - name: model
+        sql: model
+        type: string
+
+      - name: engine_type
+        sql: engine_type
+        type: string
+
+      - name: number_of_engines
+        sql: number_of_engines
+        type: number
+
+      - name: wing_span
+        sql: wing_span
+        type: number
+
+      - name: length
+        sql: length
+        type: number
+
+      - name: max_takeoff_weight
+        sql: max_takeoff_weight
+        type: number
+
+    measures:
+      - name: count
+        type: count
+
+    pre_aggregations:
+      # Pre-aggregation definitions go here.
+      # Learn more in the documentation: https://cube.dev/docs/caching/pre-aggregations/getting-started

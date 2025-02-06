@@ -1,0 +1,48 @@
+cubes:
+  - name: carriers
+    sql_table: hex_app_data.semantic_model_data.carriers
+    data_source: default
+
+    joins: []
+
+    dimensions:
+      - name: code
+        sql: code
+        type: string
+        primary_key: true
+
+      - name: name
+        sql: name
+        type: string
+
+      - name: nickname
+        sql: nickname
+        type: string
+
+      - name: iata_code
+        sql: iata_code
+        type: string
+
+      - name: icao_code
+        sql: icao_code
+        type: string
+
+      - name: callsign
+        sql: callsign
+        type: string
+
+      - name: country
+        sql: country
+        type: string
+
+      - name: active
+        sql: active
+        type: string
+
+    measures:
+      - name: carrier_count
+        type: count
+
+    pre_aggregations:
+      # Pre-aggregation definitions go here.
+      # Learn more in the documentation: https://cube.dev/docs/caching/pre-aggregations/getting-started

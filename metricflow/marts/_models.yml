@@ -1,0 +1,21 @@
+models:
+  - name: metricflow_time_spine  # @table: hex_app_data.a_test_schema.metricflow_time_spine
+    time_spine:
+      standard_granularity_column: date_day
+      custom_granularities:
+        - name: fiscal_year
+          column_name: year_fiscal
+        - name: fiscal_quarter
+          column_name: year_quarter_fiscal_name
+        - name: month_of
+          column_name: last_day_of_month
+        - name: is_odd_month
+          column_name: is_odd_month
+    columns:
+      - name: date_day
+        description: The date with type `date`
+        granularity: day
+      - name: year_fiscal
+      - name: year_quarter_fiscal_name
+      - name: last_day_of_month
+      - name: is_odd_month

@@ -1,0 +1,40 @@
+cubes:
+  - name: order_items
+    sql_table: demo_data.ecommerce.order_items
+    data_source: default
+
+    joins:
+      - name: inventory_items
+        relationship: many_to_one
+        sql: "{CUBE.inventory_item_id} = {inventory_items.id}"
+
+    dimensions:
+      - name: id
+        sql: id
+        type: number
+        primary_key: true
+
+      - name: order_id
+        sql: order_id
+        type: number
+
+      - name: product_id
+        sql: product_id
+        type: number
+
+      - name: inventory_item_id
+        sql: inventory_item_id
+        type: number
+
+    measures:
+      - name: total_revenue
+        sql: sale_price
+        type: sum
+
+      - name: profit
+        sql: "{CUBE.total_revenue} - {inventory_items.total_cost}"
+        type: number
+
+      - name: profit_margin
+        sql: "{CUBE.profit} / {CUBE.total_revenue}"
+        type: number

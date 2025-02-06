@@ -1,0 +1,54 @@
+cubes:
+  - name: aircraft_models
+    sql_table: hex_app_data.semantic_model_data.aircraft_models
+    data_source: default
+
+    joins: []
+
+    dimensions:
+      - name: aircraft_model_code
+        sql: aircraft_model_code
+        type: string
+        primary_key: true
+
+      - name: manufacturer
+        sql: manufacturer
+        type: string
+
+      - name: model
+        sql: model
+        type: string
+
+      - name: engine_type
+        sql: engine_type
+        type: string
+
+      - name: number_of_engines
+        sql: engines
+        type: number
+
+      - name: seats
+        sql: seats
+        type: number
+
+      - name: weight
+        sql: weight
+        type: number
+
+      - name: speed
+        sql: speed
+        type: number
+
+    measures:
+      - name: aircraft_model_count
+        type: count
+
+      - name: mean_seats
+        type: avg
+        sql: seats
+
+      - name: mean_weight
+        type: avg
+        sql: |
+          {CUBE}.weight
+

@@ -1,0 +1,40 @@
+cubes:
+  - name: inventory_items
+    sql_table: demo_data.ecommerce.inventory_items
+    data_source: default
+    joins: []
+
+    dimensions:
+      - name: id
+        sql: id
+        type: number
+        primaryKey: true
+
+      - name: product_id
+        sql: product_id
+        type: number
+
+      - name: product_name
+        sql: product_name
+        type: string
+
+      - name: product_category
+        sql: product_category
+        type: string
+
+      - name: product_brand
+        sql: product_brand
+        type: string
+
+      - name: product_department
+        sql: product_department
+        type: string
+
+    measures:
+      - name: total_cost
+        sql: cost
+        type: sum
+
+      - name: retail_price
+        sql: product_retail_price
+        type: sum

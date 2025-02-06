@@ -1,0 +1,1478 @@
+{
+    "skipped": {
+        " eCommerce 2": {
+            "dimensions": [
+                {
+                    "name": "location",
+                    "reason": "Dimension type: location not implemented yet:\n {'label': 'Location', 'type': 'location', 'sql_latitude': '${TABLE}.latitude', 'sql_longitude': '${TABLE}.longitude', 'name': 'location'}",
+                    "view": "users"
+                },
+                {
+                    "name": "approx_location",
+                    "reason": "Dimension type: location not implemented yet:\n {'label': 'Approx Location', 'type': 'location', 'drill_fields': ['location'], 'sql_latitude': '${approx_latitude}', 'sql_longitude': '${approx_longitude}', 'links': [{'label': 'Google Directions from {{ distribution_centers.name._value }}', 'url': \"{% if distribution_centers.location._in_query %}https://www.google.com/maps/dir/'{{ distribution_centers.latitude._value }},{{ distribution_centers.longitude._value }}'/'{{ approx_latitude._value }},{{ approx_longitude._value }}'{% endif %}\", 'icon_url': 'http://www.google.com/s2/favicons?domain=www.google.com'}], 'name': 'approx_location'}",
+                    "view": "users"
+                },
+                {
+                    "name": "location",
+                    "reason": "Dimension type: location not implemented yet:\n {'label': 'Location', 'type': 'location', 'sql_latitude': '${TABLE}.latitude', 'sql_longitude': '${TABLE}.longitude', 'name': 'location'}",
+                    "view": "users"
+                },
+                {
+                    "name": "approx_location",
+                    "reason": "Dimension type: location not implemented yet:\n {'label': 'Approx Location', 'type': 'location', 'drill_fields': ['location'], 'sql_latitude': '${approx_latitude}', 'sql_longitude': '${approx_longitude}', 'links': [{'label': 'Google Directions from {{ distribution_centers.name._value }}', 'url': \"{% if distribution_centers.location._in_query %}https://www.google.com/maps/dir/'{{ distribution_centers.latitude._value }},{{ distribution_centers.longitude._value }}'/'{{ approx_latitude._value }},{{ approx_longitude._value }}'{% endif %}\", 'icon_url': 'http://www.google.com/s2/favicons?domain=www.google.com'}], 'name': 'approx_location'}",
+                    "view": "users"
+                },
+                {
+                    "name": "location",
+                    "reason": "Dimension type: location not implemented yet:\n {'label': 'Location', 'type': 'location', 'sql_latitude': '${TABLE}.latitude', 'sql_longitude': '${TABLE}.longitude', 'name': 'location'}",
+                    "view": "users"
+                },
+                {
+                    "name": "approx_location",
+                    "reason": "Dimension type: location not implemented yet:\n {'label': 'Approx Location', 'type': 'location', 'drill_fields': ['location'], 'sql_latitude': '${approx_latitude}', 'sql_longitude': '${approx_longitude}', 'links': [{'label': 'Google Directions from {{ distribution_centers.name._value }}', 'url': \"{% if distribution_centers.location._in_query %}https://www.google.com/maps/dir/'{{ distribution_centers.latitude._value }},{{ distribution_centers.longitude._value }}'/'{{ approx_latitude._value }},{{ approx_longitude._value }}'{% endif %}\", 'icon_url': 'http://www.google.com/s2/favicons?domain=www.google.com'}], 'name': 'approx_location'}",
+                    "view": "users"
+                },
+                {
+                    "name": "item_comparison",
+                    "reason": "Liquid templating and templated filters is not supported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "brand_comparison",
+                    "reason": "Liquid templating and templated filters is not supported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "location",
+                    "reason": "Dimension type: location not implemented yet:\n {'type': 'location', 'sql_latitude': '${TABLE}.latitude', 'sql_longitude': '${TABLE}.longitude', 'name': 'location'}",
+                    "view": "distribution_centers"
+                },
+                {
+                    "name": "location",
+                    "reason": "Dimension type: location not implemented yet:\n {'label': 'Location', 'type': 'location', 'view_label': 'Visitors', 'sql_latitude': '${TABLE}.latitude', 'sql_longitude': '${TABLE}.longitude', 'name': 'location'}",
+                    "view": "events"
+                },
+                {
+                    "name": "approx_location",
+                    "reason": "Dimension type: location not implemented yet:\n {'label': 'Approximate Location', 'type': 'location', 'view_label': 'Visitors', 'sql_latitude': 'round(${TABLE}.latitude,1)', 'sql_longitude': 'round(${TABLE}.longitude,1)', 'name': 'approx_location'}",
+                    "view": "events"
+                },
+                {
+                    "name": "item_comparison",
+                    "reason": "Liquid templating and templated filters is not supported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "brand_comparison",
+                    "reason": "Liquid templating and templated filters is not supported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "location",
+                    "reason": "Dimension type: location not implemented yet:\n {'type': 'location', 'sql_latitude': '${TABLE}.latitude', 'sql_longitude': '${TABLE}.longitude', 'name': 'location'}",
+                    "view": "distribution_centers"
+                },
+                {
+                    "name": "location",
+                    "reason": "Dimension type: location not implemented yet:\n {'label': 'Location', 'type': 'location', 'view_label': 'Visitors', 'sql_latitude': '${TABLE}.latitude', 'sql_longitude': '${TABLE}.longitude', 'name': 'location'}",
+                    "view": "events"
+                },
+                {
+                    "name": "approx_location",
+                    "reason": "Dimension type: location not implemented yet:\n {'label': 'Approximate Location', 'type': 'location', 'view_label': 'Visitors', 'sql_latitude': 'round(${TABLE}.latitude,1)', 'sql_longitude': 'round(${TABLE}.longitude,1)', 'name': 'approx_location'}",
+                    "view": "events"
+                },
+                {
+                    "name": "months_since_signup",
+                    "reason": "SQL references a field in another dataset 'users.created_raw', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "gross_margin",
+                    "reason": "SQL references a field in another dataset 'inventory_items.cost', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "days_until_next_order",
+                    "reason": "SQL references a field in another dataset 'repeat_purchase_facts.next_order_raw', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "repeat_orders_within_15d",
+                    "reason": "SQL references a non-existent entity 'days_until_next_order'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "currently_active_customer",
+                    "reason": "SQL references a non-existent entity 'latest_order_date'. Note that the 'date' time dimension type is not currently supported.",
+                    "view": "user_order_facts"
+                },
+                {
+                    "name": "primary_key",
+                    "reason": "SQL references a field in another dataset 'order_items.id', which is currently unsupported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "months_since_signup",
+                    "reason": "SQL references a field in another dataset 'users.created_raw', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "gross_margin",
+                    "reason": "SQL references a field in another dataset 'inventory_items.cost', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "days_until_next_order",
+                    "reason": "SQL references a field in another dataset 'repeat_purchase_facts.next_order_raw', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "repeat_orders_within_15d",
+                    "reason": "SQL references a non-existent entity 'days_until_next_order'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "is_exit_event",
+                    "reason": "SQL references a field in another dataset 'sessions.number_of_events_in_session', which is currently unsupported",
+                    "view": "events"
+                },
+                {
+                    "name": "has_user_id",
+                    "reason": "SQL references a field in another dataset 'users.id', which is currently unsupported",
+                    "view": "events"
+                },
+                {
+                    "name": "primary_key",
+                    "reason": "SQL references a field in another dataset 'order_items.id', which is currently unsupported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "months_since_signup",
+                    "reason": "SQL references a field in another dataset 'users.created_raw', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "gross_margin",
+                    "reason": "SQL references a field in another dataset 'inventory_items.cost', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "days_until_next_order",
+                    "reason": "SQL references a field in another dataset 'repeat_purchase_facts.next_order_raw', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "repeat_orders_within_15d",
+                    "reason": "SQL references a non-existent entity 'days_until_next_order'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "is_exit_event",
+                    "reason": "SQL references a field in another dataset 'sessions.number_of_events_in_session', which is currently unsupported",
+                    "view": "events"
+                },
+                {
+                    "name": "has_user_id",
+                    "reason": "SQL references a field in another dataset 'users.id', which is currently unsupported",
+                    "view": "events"
+                },
+                {
+                    "name": "item_gross_margin_percentage",
+                    "reason": "SQL references a non-existent entity 'gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "repeat_orders_within_30d",
+                    "reason": "SQL references a non-existent entity 'days_until_next_order'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "item_gross_margin_percentage",
+                    "reason": "SQL references a non-existent entity 'gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "repeat_orders_within_30d",
+                    "reason": "SQL references a non-existent entity 'days_until_next_order'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "item_gross_margin_percentage",
+                    "reason": "SQL references a non-existent entity 'gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "repeat_orders_within_30d",
+                    "reason": "SQL references a non-existent entity 'days_until_next_order'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "item_gross_margin_percentage_tier",
+                    "reason": "SQL references a non-existent entity 'item_gross_margin_percentage'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "item_gross_margin_percentage_tier",
+                    "reason": "SQL references a non-existent entity 'item_gross_margin_percentage'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "item_gross_margin_percentage_tier",
+                    "reason": "SQL references a non-existent entity 'item_gross_margin_percentage'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                }
+            ],
+            "measures": [
+                {
+                    "name": "count_percent_of_total",
+                    "reason": "Measure type: percent_of_total not supported yet",
+                    "view": "users"
+                },
+                {
+                    "name": "median_sale_price",
+                    "reason": "Measure type: median not supported yet",
+                    "view": "order_items"
+                },
+                {
+                    "name": "count_percent_of_total",
+                    "reason": "Measure type: percent_of_total not supported yet",
+                    "view": "users"
+                },
+                {
+                    "name": "count_percent_of_total",
+                    "reason": "Measure type: percent_of_total not supported yet",
+                    "view": "users"
+                },
+                {
+                    "name": "median_sale_price",
+                    "reason": "Measure type: median not supported yet",
+                    "view": "order_items"
+                },
+                {
+                    "name": "median_sale_price",
+                    "reason": "Measure type: median not supported yet",
+                    "view": "order_items"
+                },
+                {
+                    "name": "count_last_28d",
+                    "reason": "SQL references a non-existent entity 'created_date'. Note that the 'date' time dimension type is not currently supported.",
+                    "view": "order_items"
+                },
+                {
+                    "name": "first_purchase_count",
+                    "reason": "SQL references a field in another dataset 'order_facts.is_first_purchase', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "total_gross_margin",
+                    "reason": "SQL references a non-existent entity 'gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "average_gross_margin",
+                    "reason": "SQL references a non-existent entity 'gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "average_spend_per_user",
+                    "reason": "SQL references a field in another dataset 'users.count', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "stock_coverage_ratio",
+                    "reason": "SQL references a field in another dataset 'order_items.count_last_28d', which is currently unsupported",
+                    "view": "inventory_items"
+                },
+                {
+                    "name": "active_user_count",
+                    "reason": "SQL references a non-existent entity 'first_order_date'. Note that the 'date' time dimension type is not currently supported.",
+                    "view": "user_order_facts"
+                },
+                {
+                    "name": "total_sale_price_this_item",
+                    "reason": "SQL references a field in another dataset 'order_items.sale_price', which is currently unsupported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "total_sale_price_brand_v2",
+                    "reason": "SQL references a field in another dataset 'order_items.sale_price', which is currently unsupported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "item_share_of_wallet_within_company",
+                    "reason": "SQL references a field in another dataset 'order_items.total_sale_price', which is currently unsupported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "count_last_28d",
+                    "reason": "SQL references a non-existent entity 'created_date'. Note that the 'date' time dimension type is not currently supported.",
+                    "view": "order_items"
+                },
+                {
+                    "name": "first_purchase_count",
+                    "reason": "SQL references a field in another dataset 'order_facts.is_first_purchase', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "total_gross_margin",
+                    "reason": "SQL references a non-existent entity 'gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "average_gross_margin",
+                    "reason": "SQL references a non-existent entity 'gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "average_spend_per_user",
+                    "reason": "SQL references a field in another dataset 'users.count', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "count_bounces",
+                    "reason": "SQL references a non-existent entity 'is_exit_event'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "events"
+                },
+                {
+                    "name": "stock_coverage_ratio",
+                    "reason": "SQL references a field in another dataset 'order_items.count_last_28d', which is currently unsupported",
+                    "view": "inventory_items"
+                },
+                {
+                    "name": "total_sale_price_this_item",
+                    "reason": "SQL references a field in another dataset 'order_items.sale_price', which is currently unsupported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "total_sale_price_brand_v2",
+                    "reason": "SQL references a field in another dataset 'order_items.sale_price', which is currently unsupported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "item_share_of_wallet_within_company",
+                    "reason": "SQL references a field in another dataset 'order_items.total_sale_price', which is currently unsupported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "count_last_28d",
+                    "reason": "SQL references a non-existent entity 'created_date'. Note that the 'date' time dimension type is not currently supported.",
+                    "view": "order_items"
+                },
+                {
+                    "name": "first_purchase_count",
+                    "reason": "SQL references a field in another dataset 'order_facts.is_first_purchase', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "total_gross_margin",
+                    "reason": "SQL references a non-existent entity 'gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "average_gross_margin",
+                    "reason": "SQL references a non-existent entity 'gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "average_spend_per_user",
+                    "reason": "SQL references a field in another dataset 'users.count', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "count_bounces",
+                    "reason": "SQL references a non-existent entity 'is_exit_event'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "events"
+                },
+                {
+                    "name": "total_gross_margin_percentage",
+                    "reason": "SQL references a non-existent entity 'total_gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "count_with_repeat_purchase_within_30d",
+                    "reason": "SQL references a non-existent entity 'repeat_orders_within_30d'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "total_sale_price_this_brand",
+                    "reason": "SQL references a field in another dataset 'order_items.sale_price', which is currently unsupported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "brand_share_of_wallet_within_company",
+                    "reason": "SQL references a non-existent entity 'total_sale_price_brand_v2'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "total_gross_margin_percentage",
+                    "reason": "SQL references a non-existent entity 'total_gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "count_with_repeat_purchase_within_30d",
+                    "reason": "SQL references a non-existent entity 'repeat_orders_within_30d'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "bounce_rate",
+                    "reason": "SQL references a non-existent entity 'count_bounces'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "events"
+                },
+                {
+                    "name": "total_sale_price_this_brand",
+                    "reason": "SQL references a field in another dataset 'order_items.sale_price', which is currently unsupported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "brand_share_of_wallet_within_company",
+                    "reason": "SQL references a non-existent entity 'total_sale_price_brand_v2'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "total_gross_margin_percentage",
+                    "reason": "SQL references a non-existent entity 'total_gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "count_with_repeat_purchase_within_30d",
+                    "reason": "SQL references a non-existent entity 'repeat_orders_within_30d'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "bounce_rate",
+                    "reason": "SQL references a non-existent entity 'count_bounces'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "events"
+                },
+                {
+                    "name": "30_day_repeat_purchase_rate",
+                    "reason": "SQL references a non-existent entity 'count_with_repeat_purchase_within_30d'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "item_share_of_wallet_within_brand",
+                    "reason": "SQL references a non-existent entity 'total_sale_price_this_brand'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "30_day_repeat_purchase_rate",
+                    "reason": "SQL references a non-existent entity 'count_with_repeat_purchase_within_30d'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "item_share_of_wallet_within_brand",
+                    "reason": "SQL references a non-existent entity 'total_sale_price_this_brand'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "30_day_repeat_purchase_rate",
+                    "reason": "SQL references a non-existent entity 'count_with_repeat_purchase_within_30d'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                }
+            ],
+            "joins": [
+                {
+                    "name": "sessions",
+                    "reason": "Dataset referenced in join not found: sessions_webanalytics. This is could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "users",
+                    "reason": "Dataset referenced in join not found: cohort_size. This could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "order_items",
+                    "reason": "Dataset referenced in join not found: order_items_cohorts. This is could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "users",
+                    "reason": "Dataset referenced in join not found: cohort_size. This could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "order_items",
+                    "reason": "Dataset referenced in join not found: order_items_cohorts. This is could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "sessions",
+                    "reason": "Dataset referenced in join not found: sessions_webanalytics. This is could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "inventory_items",
+                    "reason": "Only left outer joins are supported."
+                },
+                {
+                    "name": "repeat_purchase_facts",
+                    "reason": "Only left outer joins are supported."
+                },
+                {
+                    "name": "product_a",
+                    "reason": "Dataset referenced in join not found: affinity. This could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "product_b",
+                    "reason": "Dataset referenced in join not found: affinity. This could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "trailing_sales_snapshot",
+                    "reason": "Dataset referenced in join not found: trailing_sales_snapshot. This is could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "products",
+                    "reason": "Dataset referenced in join not found: inventory_snapshot. This could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "cluster_info",
+                    "reason": "Dataset referenced in join not found: cluster_info. This is could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "ecomm_model_eval",
+                    "reason": "Dataset referenced in join not found: ecomm_model_eval. This is could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "ecomm_feature_info",
+                    "reason": "Dataset referenced in join not found: ecomm_feature_info. This is could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "users",
+                    "reason": "Dataset referenced in join not found: ecomm_predict. This could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "repeat_purchase_facts",
+                    "reason": "Only left outer joins are supported."
+                }
+            ],
+            "views": [
+                {
+                    "name": "ecomm_model_eval",
+                    "reason": "View ecomm_model_eval does not have a primary key"
+                },
+                {
+                    "name": "ecomm_feature_info",
+                    "reason": "View ecomm_feature_info does not have a primary key"
+                },
+                {
+                    "name": "ecomm_training_info",
+                    "reason": "View ecomm_training_info does not have a primary key"
+                },
+                {
+                    "name": "cluster_info",
+                    "reason": "View cluster_info does not have a primary key"
+                },
+                {
+                    "name": "kmeans_model5",
+                    "reason": "View kmeans_model5 does not have a primary key"
+                },
+                {
+                    "name": "trailing_sales_snapshot",
+                    "reason": "View trailing_sales_snapshot does not have a primary key"
+                },
+                {
+                    "name": "kitten_users",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "kitten_order_items",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "ecomm_model_eval",
+                    "reason": "View ecomm_model_eval does not have a primary key"
+                },
+                {
+                    "name": "ecomm_feature_info",
+                    "reason": "View ecomm_feature_info does not have a primary key"
+                },
+                {
+                    "name": "ecomm_training_info",
+                    "reason": "View ecomm_training_info does not have a primary key"
+                },
+                {
+                    "name": "cluster_info",
+                    "reason": "View cluster_info does not have a primary key"
+                },
+                {
+                    "name": "kmeans_model5",
+                    "reason": "View kmeans_model5 does not have a primary key"
+                },
+                {
+                    "name": "trailing_sales_snapshot",
+                    "reason": "View trailing_sales_snapshot does not have a primary key"
+                },
+                {
+                    "name": "kitten_users",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "kitten_order_items",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "ecomm_feature_generation",
+                    "reason": "View ecomm_feature_generation does not have a primary key"
+                },
+                {
+                    "name": "ecomm_fit",
+                    "reason": "View ecomm_fit does not have a primary key"
+                },
+                {
+                    "name": "ecomm_predict",
+                    "reason": "View ecomm_predict does not have a primary key"
+                },
+                {
+                    "name": "affinity",
+                    "reason": "View affinity does not have a primary key"
+                },
+                {
+                    "name": "user_order_product",
+                    "reason": "View user_order_product does not have a primary key"
+                },
+                {
+                    "name": "total_order_product",
+                    "reason": "View total_order_product does not have a primary key"
+                },
+                {
+                    "name": "inventory_snapshot",
+                    "reason": "View inventory_snapshot does not have a primary key"
+                },
+                {
+                    "name": "data_tool",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "sessions_webanalytics",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "cohort_size",
+                    "reason": "Liquid templating and templated filters are not supported"
+                },
+                {
+                    "name": "order_items_cohorts",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "cohort_size",
+                    "reason": "Liquid templating and templated filters are not supported"
+                },
+                {
+                    "name": "order_items_cohorts",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "ecomm_feature_generation",
+                    "reason": "View ecomm_feature_generation does not have a primary key"
+                },
+                {
+                    "name": "ecomm_fit",
+                    "reason": "View ecomm_fit does not have a primary key"
+                },
+                {
+                    "name": "ecomm_predict",
+                    "reason": "View ecomm_predict does not have a primary key"
+                },
+                {
+                    "name": "data_tool",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "sessions_webanalytics",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "affinity",
+                    "reason": "View affinity does not have a primary key"
+                },
+                {
+                    "name": "user_order_product",
+                    "reason": "View user_order_product does not have a primary key"
+                },
+                {
+                    "name": "total_order_product",
+                    "reason": "View total_order_product does not have a primary key"
+                },
+                {
+                    "name": "inventory_snapshot",
+                    "reason": "View inventory_snapshot does not have a primary key"
+                }
+            ],
+            "explores": [
+                {
+                    "name": "orders_with_share_of_wallet_application",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "journey_mapping",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "kitten_order_items",
+                    "reason": "Extends are not supported"
+                }
+            ],
+            "filters": [
+                {
+                    "name": "item_name",
+                    "reason": "Filter parameters are not supported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "brand",
+                    "reason": "Filter parameters are not supported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "item_name",
+                    "reason": "Filter parameters are not supported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "brand",
+                    "reason": "Filter parameters are not supported",
+                    "view": "order_items_share_of_wallet"
+                }
+            ]
+        }
+    }
+}%
+clairefu@Hex-Claire-Fu documents % ./scripts/run-dev.sh
+zsh: no such file or directory: ./scripts/run-dev.sh
+clairefu@Hex-Claire-Fu documents % curl -X POST \
+ -F "data=@ecommerce.zip" \
+ -F "syntax=LOOK_ML" \
+ -F "dataConnectionId=4ee7e551-3abd-4085-9575-25b51f224bc7" \
+ -F "verbose=true" \
+ localhost: 6060/api/v1/semantic-layer \
+ -H "Authorization: Bearer $TOKEN"{
+    "skipped": {
+        " eCommerce 2": {
+            "dimensions": [
+                {
+                    "name": "location",
+                    "reason": "Dimension type: location not implemented yet:\n {'label': 'Location', 'type': 'location', 'sql_latitude': '${TABLE}.latitude', 'sql_longitude': '${TABLE}.longitude', 'name': 'location'}",
+                    "view": "users"
+                },
+                {
+                    "name": "approx_location",
+                    "reason": "Dimension type: location not implemented yet:\n {'label': 'Approx Location', 'type': 'location', 'drill_fields': ['location'], 'sql_latitude': '${approx_latitude}', 'sql_longitude': '${approx_longitude}', 'links': [{'label': 'Google Directions from {{ distribution_centers.name._value }}', 'url': \"{% if distribution_centers.location._in_query %}https://www.google.com/maps/dir/'{{ distribution_centers.latitude._value }},{{ distribution_centers.longitude._value }}'/'{{ approx_latitude._value }},{{ approx_longitude._value }}'{% endif %}\", 'icon_url': 'http://www.google.com/s2/favicons?domain=www.google.com'}], 'name': 'approx_location'}",
+                    "view": "users"
+                },
+                {
+                    "name": "location",
+                    "reason": "Dimension type: location not implemented yet:\n {'label': 'Location', 'type': 'location', 'sql_latitude': '${TABLE}.latitude', 'sql_longitude': '${TABLE}.longitude', 'name': 'location'}",
+                    "view": "users"
+                },
+                {
+                    "name": "approx_location",
+                    "reason": "Dimension type: location not implemented yet:\n {'label': 'Approx Location', 'type': 'location', 'drill_fields': ['location'], 'sql_latitude': '${approx_latitude}', 'sql_longitude': '${approx_longitude}', 'links': [{'label': 'Google Directions from {{ distribution_centers.name._value }}', 'url': \"{% if distribution_centers.location._in_query %}https://www.google.com/maps/dir/'{{ distribution_centers.latitude._value }},{{ distribution_centers.longitude._value }}'/'{{ approx_latitude._value }},{{ approx_longitude._value }}'{% endif %}\", 'icon_url': 'http://www.google.com/s2/favicons?domain=www.google.com'}], 'name': 'approx_location'}",
+                    "view": "users"
+                },
+                {
+                    "name": "location",
+                    "reason": "Dimension type: location not implemented yet:\n {'label': 'Location', 'type': 'location', 'sql_latitude': '${TABLE}.latitude', 'sql_longitude': '${TABLE}.longitude', 'name': 'location'}",
+                    "view": "users"
+                },
+                {
+                    "name": "approx_location",
+                    "reason": "Dimension type: location not implemented yet:\n {'label': 'Approx Location', 'type': 'location', 'drill_fields': ['location'], 'sql_latitude': '${approx_latitude}', 'sql_longitude': '${approx_longitude}', 'links': [{'label': 'Google Directions from {{ distribution_centers.name._value }}', 'url': \"{% if distribution_centers.location._in_query %}https://www.google.com/maps/dir/'{{ distribution_centers.latitude._value }},{{ distribution_centers.longitude._value }}'/'{{ approx_latitude._value }},{{ approx_longitude._value }}'{% endif %}\", 'icon_url': 'http://www.google.com/s2/favicons?domain=www.google.com'}], 'name': 'approx_location'}",
+                    "view": "users"
+                },
+                {
+                    "name": "item_comparison",
+                    "reason": "Liquid templating and templated filters is not supported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "brand_comparison",
+                    "reason": "Liquid templating and templated filters is not supported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "location",
+                    "reason": "Dimension type: location not implemented yet:\n {'type': 'location', 'sql_latitude': '${TABLE}.latitude', 'sql_longitude': '${TABLE}.longitude', 'name': 'location'}",
+                    "view": "distribution_centers"
+                },
+                {
+                    "name": "location",
+                    "reason": "Dimension type: location not implemented yet:\n {'label': 'Location', 'type': 'location', 'view_label': 'Visitors', 'sql_latitude': '${TABLE}.latitude', 'sql_longitude': '${TABLE}.longitude', 'name': 'location'}",
+                    "view": "events"
+                },
+                {
+                    "name": "approx_location",
+                    "reason": "Dimension type: location not implemented yet:\n {'label': 'Approximate Location', 'type': 'location', 'view_label': 'Visitors', 'sql_latitude': 'round(${TABLE}.latitude,1)', 'sql_longitude': 'round(${TABLE}.longitude,1)', 'name': 'approx_location'}",
+                    "view": "events"
+                },
+                {
+                    "name": "item_comparison",
+                    "reason": "Liquid templating and templated filters is not supported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "brand_comparison",
+                    "reason": "Liquid templating and templated filters is not supported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "location",
+                    "reason": "Dimension type: location not implemented yet:\n {'type': 'location', 'sql_latitude': '${TABLE}.latitude', 'sql_longitude': '${TABLE}.longitude', 'name': 'location'}",
+                    "view": "distribution_centers"
+                },
+                {
+                    "name": "location",
+                    "reason": "Dimension type: location not implemented yet:\n {'label': 'Location', 'type': 'location', 'view_label': 'Visitors', 'sql_latitude': '${TABLE}.latitude', 'sql_longitude': '${TABLE}.longitude', 'name': 'location'}",
+                    "view": "events"
+                },
+                {
+                    "name": "approx_location",
+                    "reason": "Dimension type: location not implemented yet:\n {'label': 'Approximate Location', 'type': 'location', 'view_label': 'Visitors', 'sql_latitude': 'round(${TABLE}.latitude,1)', 'sql_longitude': 'round(${TABLE}.longitude,1)', 'name': 'approx_location'}",
+                    "view": "events"
+                },
+                {
+                    "name": "months_since_signup",
+                    "reason": "SQL references a field in another dataset 'users.created_raw', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "gross_margin",
+                    "reason": "SQL references a field in another dataset 'inventory_items.cost', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "days_until_next_order",
+                    "reason": "SQL references a field in another dataset 'repeat_purchase_facts.next_order_raw', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "repeat_orders_within_15d",
+                    "reason": "SQL references a non-existent entity 'days_until_next_order'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "currently_active_customer",
+                    "reason": "SQL references a non-existent entity 'latest_order_date'. Note that the 'date' time dimension type is not currently supported.",
+                    "view": "user_order_facts"
+                },
+                {
+                    "name": "primary_key",
+                    "reason": "SQL references a field in another dataset 'order_items.id', which is currently unsupported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "months_since_signup",
+                    "reason": "SQL references a field in another dataset 'users.created_raw', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "gross_margin",
+                    "reason": "SQL references a field in another dataset 'inventory_items.cost', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "days_until_next_order",
+                    "reason": "SQL references a field in another dataset 'repeat_purchase_facts.next_order_raw', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "repeat_orders_within_15d",
+                    "reason": "SQL references a non-existent entity 'days_until_next_order'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "is_exit_event",
+                    "reason": "SQL references a field in another dataset 'sessions.number_of_events_in_session', which is currently unsupported",
+                    "view": "events"
+                },
+                {
+                    "name": "has_user_id",
+                    "reason": "SQL references a field in another dataset 'users.id', which is currently unsupported",
+                    "view": "events"
+                },
+                {
+                    "name": "primary_key",
+                    "reason": "SQL references a field in another dataset 'order_items.id', which is currently unsupported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "months_since_signup",
+                    "reason": "SQL references a field in another dataset 'users.created_raw', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "gross_margin",
+                    "reason": "SQL references a field in another dataset 'inventory_items.cost', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "days_until_next_order",
+                    "reason": "SQL references a field in another dataset 'repeat_purchase_facts.next_order_raw', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "repeat_orders_within_15d",
+                    "reason": "SQL references a non-existent entity 'days_until_next_order'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "is_exit_event",
+                    "reason": "SQL references a field in another dataset 'sessions.number_of_events_in_session', which is currently unsupported",
+                    "view": "events"
+                },
+                {
+                    "name": "has_user_id",
+                    "reason": "SQL references a field in another dataset 'users.id', which is currently unsupported",
+                    "view": "events"
+                },
+                {
+                    "name": "item_gross_margin_percentage",
+                    "reason": "SQL references a non-existent entity 'gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "repeat_orders_within_30d",
+                    "reason": "SQL references a non-existent entity 'days_until_next_order'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "item_gross_margin_percentage",
+                    "reason": "SQL references a non-existent entity 'gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "repeat_orders_within_30d",
+                    "reason": "SQL references a non-existent entity 'days_until_next_order'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "item_gross_margin_percentage",
+                    "reason": "SQL references a non-existent entity 'gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "repeat_orders_within_30d",
+                    "reason": "SQL references a non-existent entity 'days_until_next_order'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "item_gross_margin_percentage_tier",
+                    "reason": "SQL references a non-existent entity 'item_gross_margin_percentage'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "item_gross_margin_percentage_tier",
+                    "reason": "SQL references a non-existent entity 'item_gross_margin_percentage'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "item_gross_margin_percentage_tier",
+                    "reason": "SQL references a non-existent entity 'item_gross_margin_percentage'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                }
+            ],
+            "measures": [
+                {
+                    "name": "count_percent_of_total",
+                    "reason": "Measure type: percent_of_total not supported yet",
+                    "view": "users"
+                },
+                {
+                    "name": "median_sale_price",
+                    "reason": "Measure type: median not supported yet",
+                    "view": "order_items"
+                },
+                {
+                    "name": "count_percent_of_total",
+                    "reason": "Measure type: percent_of_total not supported yet",
+                    "view": "users"
+                },
+                {
+                    "name": "count_percent_of_total",
+                    "reason": "Measure type: percent_of_total not supported yet",
+                    "view": "users"
+                },
+                {
+                    "name": "median_sale_price",
+                    "reason": "Measure type: median not supported yet",
+                    "view": "order_items"
+                },
+                {
+                    "name": "median_sale_price",
+                    "reason": "Measure type: median not supported yet",
+                    "view": "order_items"
+                },
+                {
+                    "name": "count_last_28d",
+                    "reason": "SQL references a non-existent entity 'created_date'. Note that the 'date' time dimension type is not currently supported.",
+                    "view": "order_items"
+                },
+                {
+                    "name": "first_purchase_count",
+                    "reason": "SQL references a field in another dataset 'order_facts.is_first_purchase', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "total_gross_margin",
+                    "reason": "SQL references a non-existent entity 'gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "average_gross_margin",
+                    "reason": "SQL references a non-existent entity 'gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "average_spend_per_user",
+                    "reason": "SQL references a field in another dataset 'users.count', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "stock_coverage_ratio",
+                    "reason": "SQL references a field in another dataset 'order_items.count_last_28d', which is currently unsupported",
+                    "view": "inventory_items"
+                },
+                {
+                    "name": "active_user_count",
+                    "reason": "SQL references a non-existent entity 'first_order_date'. Note that the 'date' time dimension type is not currently supported.",
+                    "view": "user_order_facts"
+                },
+                {
+                    "name": "total_sale_price_this_item",
+                    "reason": "SQL references a field in another dataset 'order_items.sale_price', which is currently unsupported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "total_sale_price_brand_v2",
+                    "reason": "SQL references a field in another dataset 'order_items.sale_price', which is currently unsupported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "item_share_of_wallet_within_company",
+                    "reason": "SQL references a field in another dataset 'order_items.total_sale_price', which is currently unsupported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "count_last_28d",
+                    "reason": "SQL references a non-existent entity 'created_date'. Note that the 'date' time dimension type is not currently supported.",
+                    "view": "order_items"
+                },
+                {
+                    "name": "first_purchase_count",
+                    "reason": "SQL references a field in another dataset 'order_facts.is_first_purchase', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "total_gross_margin",
+                    "reason": "SQL references a non-existent entity 'gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "average_gross_margin",
+                    "reason": "SQL references a non-existent entity 'gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "average_spend_per_user",
+                    "reason": "SQL references a field in another dataset 'users.count', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "count_bounces",
+                    "reason": "SQL references a non-existent entity 'is_exit_event'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "events"
+                },
+                {
+                    "name": "stock_coverage_ratio",
+                    "reason": "SQL references a field in another dataset 'order_items.count_last_28d', which is currently unsupported",
+                    "view": "inventory_items"
+                },
+                {
+                    "name": "total_sale_price_this_item",
+                    "reason": "SQL references a field in another dataset 'order_items.sale_price', which is currently unsupported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "total_sale_price_brand_v2",
+                    "reason": "SQL references a field in another dataset 'order_items.sale_price', which is currently unsupported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "item_share_of_wallet_within_company",
+                    "reason": "SQL references a field in another dataset 'order_items.total_sale_price', which is currently unsupported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "count_last_28d",
+                    "reason": "SQL references a non-existent entity 'created_date'. Note that the 'date' time dimension type is not currently supported.",
+                    "view": "order_items"
+                },
+                {
+                    "name": "first_purchase_count",
+                    "reason": "SQL references a field in another dataset 'order_facts.is_first_purchase', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "total_gross_margin",
+                    "reason": "SQL references a non-existent entity 'gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "average_gross_margin",
+                    "reason": "SQL references a non-existent entity 'gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "average_spend_per_user",
+                    "reason": "SQL references a field in another dataset 'users.count', which is currently unsupported",
+                    "view": "order_items"
+                },
+                {
+                    "name": "count_bounces",
+                    "reason": "SQL references a non-existent entity 'is_exit_event'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "events"
+                },
+                {
+                    "name": "total_gross_margin_percentage",
+                    "reason": "SQL references a non-existent entity 'total_gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "count_with_repeat_purchase_within_30d",
+                    "reason": "SQL references a non-existent entity 'repeat_orders_within_30d'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "total_sale_price_this_brand",
+                    "reason": "SQL references a field in another dataset 'order_items.sale_price', which is currently unsupported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "brand_share_of_wallet_within_company",
+                    "reason": "SQL references a non-existent entity 'total_sale_price_brand_v2'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "total_gross_margin_percentage",
+                    "reason": "SQL references a non-existent entity 'total_gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "count_with_repeat_purchase_within_30d",
+                    "reason": "SQL references a non-existent entity 'repeat_orders_within_30d'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "bounce_rate",
+                    "reason": "SQL references a non-existent entity 'count_bounces'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "events"
+                },
+                {
+                    "name": "total_sale_price_this_brand",
+                    "reason": "SQL references a field in another dataset 'order_items.sale_price', which is currently unsupported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "brand_share_of_wallet_within_company",
+                    "reason": "SQL references a non-existent entity 'total_sale_price_brand_v2'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "total_gross_margin_percentage",
+                    "reason": "SQL references a non-existent entity 'total_gross_margin'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "count_with_repeat_purchase_within_30d",
+                    "reason": "SQL references a non-existent entity 'repeat_orders_within_30d'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "bounce_rate",
+                    "reason": "SQL references a non-existent entity 'count_bounces'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "events"
+                },
+                {
+                    "name": "30_day_repeat_purchase_rate",
+                    "reason": "SQL references a non-existent entity 'count_with_repeat_purchase_within_30d'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "item_share_of_wallet_within_brand",
+                    "reason": "SQL references a non-existent entity 'total_sale_price_this_brand'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "30_day_repeat_purchase_rate",
+                    "reason": "SQL references a non-existent entity 'count_with_repeat_purchase_within_30d'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                },
+                {
+                    "name": "item_share_of_wallet_within_brand",
+                    "reason": "SQL references a non-existent entity 'total_sale_price_this_brand'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "30_day_repeat_purchase_rate",
+                    "reason": "SQL references a non-existent entity 'count_with_repeat_purchase_within_30d'. (this entity could be missing due to being unsupported or the entity not existing in the original LookML spec).",
+                    "view": "order_items"
+                }
+            ],
+            "joins": [
+                {
+                    "name": "sessions",
+                    "reason": "Dataset referenced in join not found: sessions_webanalytics. This is could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "users",
+                    "reason": "Dataset referenced in join not found: cohort_size. This could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "order_items",
+                    "reason": "Dataset referenced in join not found: order_items_cohorts. This is could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "users",
+                    "reason": "Dataset referenced in join not found: cohort_size. This could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "order_items",
+                    "reason": "Dataset referenced in join not found: order_items_cohorts. This is could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "sessions",
+                    "reason": "Dataset referenced in join not found: sessions_webanalytics. This is could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "inventory_items",
+                    "reason": "Only left outer joins are supported."
+                },
+                {
+                    "name": "repeat_purchase_facts",
+                    "reason": "Only left outer joins are supported."
+                },
+                {
+                    "name": "product_a",
+                    "reason": "Dataset referenced in join not found: affinity. This could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "product_b",
+                    "reason": "Dataset referenced in join not found: affinity. This could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "trailing_sales_snapshot",
+                    "reason": "Dataset referenced in join not found: trailing_sales_snapshot. This is could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "products",
+                    "reason": "Dataset referenced in join not found: inventory_snapshot. This could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "cluster_info",
+                    "reason": "Dataset referenced in join not found: cluster_info. This is could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "ecomm_model_eval",
+                    "reason": "Dataset referenced in join not found: ecomm_model_eval. This is could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "ecomm_feature_info",
+                    "reason": "Dataset referenced in join not found: ecomm_feature_info. This is could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "users",
+                    "reason": "Dataset referenced in join not found: ecomm_predict. This could be due to the view being an extend (currently unsupported)."
+                },
+                {
+                    "name": "repeat_purchase_facts",
+                    "reason": "Only left outer joins are supported."
+                }
+            ],
+            "views": [
+                {
+                    "name": "ecomm_model_eval",
+                    "reason": "View ecomm_model_eval does not have a primary key"
+                },
+                {
+                    "name": "ecomm_feature_info",
+                    "reason": "View ecomm_feature_info does not have a primary key"
+                },
+                {
+                    "name": "ecomm_training_info",
+                    "reason": "View ecomm_training_info does not have a primary key"
+                },
+                {
+                    "name": "cluster_info",
+                    "reason": "View cluster_info does not have a primary key"
+                },
+                {
+                    "name": "kmeans_model5",
+                    "reason": "View kmeans_model5 does not have a primary key"
+                },
+                {
+                    "name": "trailing_sales_snapshot",
+                    "reason": "View trailing_sales_snapshot does not have a primary key"
+                },
+                {
+                    "name": "kitten_users",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "kitten_order_items",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "ecomm_model_eval",
+                    "reason": "View ecomm_model_eval does not have a primary key"
+                },
+                {
+                    "name": "ecomm_feature_info",
+                    "reason": "View ecomm_feature_info does not have a primary key"
+                },
+                {
+                    "name": "ecomm_training_info",
+                    "reason": "View ecomm_training_info does not have a primary key"
+                },
+                {
+                    "name": "cluster_info",
+                    "reason": "View cluster_info does not have a primary key"
+                },
+                {
+                    "name": "kmeans_model5",
+                    "reason": "View kmeans_model5 does not have a primary key"
+                },
+                {
+                    "name": "trailing_sales_snapshot",
+                    "reason": "View trailing_sales_snapshot does not have a primary key"
+                },
+                {
+                    "name": "kitten_users",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "kitten_order_items",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "ecomm_feature_generation",
+                    "reason": "View ecomm_feature_generation does not have a primary key"
+                },
+                {
+                    "name": "ecomm_fit",
+                    "reason": "View ecomm_fit does not have a primary key"
+                },
+                {
+                    "name": "ecomm_predict",
+                    "reason": "View ecomm_predict does not have a primary key"
+                },
+                {
+                    "name": "affinity",
+                    "reason": "View affinity does not have a primary key"
+                },
+                {
+                    "name": "user_order_product",
+                    "reason": "View user_order_product does not have a primary key"
+                },
+                {
+                    "name": "total_order_product",
+                    "reason": "View total_order_product does not have a primary key"
+                },
+                {
+                    "name": "inventory_snapshot",
+                    "reason": "View inventory_snapshot does not have a primary key"
+                },
+                {
+                    "name": "data_tool",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "sessions_webanalytics",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "cohort_size",
+                    "reason": "Liquid templating and templated filters are not supported"
+                },
+                {
+                    "name": "order_items_cohorts",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "cohort_size",
+                    "reason": "Liquid templating and templated filters are not supported"
+                },
+                {
+                    "name": "order_items_cohorts",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "ecomm_feature_generation",
+                    "reason": "View ecomm_feature_generation does not have a primary key"
+                },
+                {
+                    "name": "ecomm_fit",
+                    "reason": "View ecomm_fit does not have a primary key"
+                },
+                {
+                    "name": "ecomm_predict",
+                    "reason": "View ecomm_predict does not have a primary key"
+                },
+                {
+                    "name": "data_tool",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "sessions_webanalytics",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "affinity",
+                    "reason": "View affinity does not have a primary key"
+                },
+                {
+                    "name": "user_order_product",
+                    "reason": "View user_order_product does not have a primary key"
+                },
+                {
+                    "name": "total_order_product",
+                    "reason": "View total_order_product does not have a primary key"
+                },
+                {
+                    "name": "inventory_snapshot",
+                    "reason": "View inventory_snapshot does not have a primary key"
+                }
+            ],
+            "explores": [
+                {
+                    "name": "orders_with_share_of_wallet_application",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "journey_mapping",
+                    "reason": "Extends are not supported"
+                },
+                {
+                    "name": "kitten_order_items",
+                    "reason": "Extends are not supported"
+                }
+            ],
+            "filters": [
+                {
+                    "name": "item_name",
+                    "reason": "Filter parameters are not supported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "brand",
+                    "reason": "Filter parameters are not supported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "item_name",
+                    "reason": "Filter parameters are not supported",
+                    "view": "order_items_share_of_wallet"
+                },
+                {
+                    "name": "brand",
+                    "reason": "Filter parameters are not supported",
+                    "view": "order_items_share_of_wallet"
+                }
+            ]
+        }
+    }
+}%

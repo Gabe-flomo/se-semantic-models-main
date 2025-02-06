@@ -1,0 +1,26 @@
+cubes:
+  - name: users
+    sql_table: demo_data.ecommerce.users
+    data_source: default
+
+    dimensions:
+      - name: user_id
+        sql: user_id
+        type: number
+        primaryKey: true
+
+      - name: country
+        sql: country
+        type: string
+
+      - name: user_latitude
+        sql: latitude
+        type: number
+
+      - name: user_longitude
+        sql: longitude
+        type: number
+
+      - name: traffic_source
+        sql: traffic_source
+        type: string
