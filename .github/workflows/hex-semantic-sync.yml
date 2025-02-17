@@ -23,7 +23,7 @@ jobs:
       if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
       run: |
           response=$(curl -s -w "%{http_code}" -o response.txt -X POST \
-            -F "data=repo.zip" \
+            -F "data=@$DIRECTORY/repo.zip" \
             https://rc.hex.tech/api/v1/semantic-models/7c4ecde7-dfee-4a5b-9e6b-898d832a3178/sync \
             -H "Authorization: Bearer $TOKEN")
           if [ "$response" -eq 201 ]; then
@@ -38,7 +38,7 @@ jobs:
       if: github.ref != 'refs/heads/main' && github.ref != 'refs/heads/master'
       run: |
           response=$(curl -s -w "%{http_code}" -o response.txt -X POST \
-            -F "data=repo.zip" \
+            -F "data=@$DIRECTORY/repo.zip" \
             -F "dryRun=true" \
             https://rc.hex.tech/api/v1/semantic-models/7c4ecde7-dfee-4a5b-9e6b-898d832a3178/sync \
             -H "Authorization: Bearer $TOKEN")
