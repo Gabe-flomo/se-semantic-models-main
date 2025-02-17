@@ -8,7 +8,7 @@ env:
   TOKEN: ${{ secrets.HEX_SEMANTIC_SYNC_TOKEN }}
   # The top level directory containing your semantic layer files.
   # By default this is your entire repository, but you can update this is you only want to zip a specific subdirectory.
-  DIRECTORY: /metricflow
+  DIRECTORY: metricflow
 jobs:
   hex-semantic-model-sync:
     runs-on: ubuntu-latest
